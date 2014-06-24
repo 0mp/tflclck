@@ -107,7 +107,7 @@ int main(){
                 timer(6,20,60);
                 break;
             case 't':{//test
-                cin >> p >> r;
+                scanf("%f%f", p,r);
                 timer(0,p,r);
                 break;
                 }
