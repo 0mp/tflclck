@@ -18,6 +18,7 @@ clock_t start;
 double timeLeft;
 double duration;
 double previousTimeLeft;
+double p, r;
 
 void instruction(){
     printf("Decide what to do now:\n");
@@ -106,7 +107,6 @@ int main(){
                 timer(6,20,60);
                 break;
             case 't':{//test
-                double p, r;
                 cin >> p >> r;
                 timer(0,p,r);
                 break;
