@@ -18,7 +18,7 @@ clock_t start;
 double timeLeft;
 double duration;
 double previousTimeLeft;
-double p, r;
+double testPreparation, testResponse;
 
 void instruction(){
     printf("Decide what to do now:\n");
@@ -107,8 +107,8 @@ int main(){
                 timer(6,20,60);
                 break;
             case 't':{//test
-                scanf("%f%f", p,r);
-                timer(0,p,r);
+                scanf("%f%f", testPreparation,testResponse);
+                timer(0,testPreparation,testResponse);
                 break;
                 }
             case 'q':
