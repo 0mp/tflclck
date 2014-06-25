@@ -45,11 +45,11 @@ void timerCounter(double start, double amountOfTime){
     }
 }
 
-void timer(int taskNumber, double preparation, double response){
+void timer(string taskName, double preparation, double response){
 
     system("cls");
 
-    printf("Task number %d\n\n", taskNumber);
+    printf("%d\n\n", taskName);
 
     start = clock();
     previousTimeLeft = -1;
@@ -89,26 +89,26 @@ int main(){
 
         switch(input){
             case '1':
-                timer(1,15,45);
+                timer("Task number 1",15,45);
                 break;
             case '2':
-                timer(2,15,45);
+                timer("Task number 2",15,45);
                 break;
             case '3':
-                timer(3,30,60);
+                timer("Task number 3",30,60);
                 break;
             case '4':
-                timer(4,30,60);
+                timer("Task number 4",30,60);
                 break;
             case '5':
-                timer(5,20,60);
+                timer("Task number 5",20,60);
                 break;
             case '6':
-                timer(6,20,60);
+                timer("Task number 6",20,60);
                 break;
             case 't':{//test
                 scanf("%f%f", testPreparation,testResponse);
-                timer(0,testPreparation,testResponse);
+                timer("Test Task",testPreparation,testResponse);
                 break;
                 }
             case 'q':
