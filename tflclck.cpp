@@ -1,5 +1,5 @@
 /// tflclck
-/// version 1.15
+/// version 1.18
 /// Mateusz Piotrowski
 /// 2014
 
@@ -12,7 +12,7 @@
 
 using namespace std;
 
-double version = 1.15;
+double version = 1.18;
 char input;
 clock_t start;
 double timeLeft;
