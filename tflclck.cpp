@@ -1,5 +1,4 @@
 /// tflclck
-/// version 1.18
 /// Mateusz Piotrowski
 /// 2014
 
@@ -12,7 +11,7 @@
 
 using namespace std;
 
-double version = 1.18;
+double version = 1.2;
 char input;
 clock_t start;
 double timeLeft;
@@ -22,12 +21,13 @@ double testPreparation, testResponse;
 
 void instruction(){
     printf("Decide what to do now:\n");
-    printf("Type 1 for Personal Preference Task.\n");
-    printf("Type 2 for Choice Task.\n");
-    printf("Type 3 for Read/Listen/Speak Campus Situation Task.\n");
-    printf("Type 4 for Read/Listen/Speak Academic Course Task.\n");
-    printf("Type 5 for Listen/Speak Campus Situation Task.\n");
-    printf("Type 6 for Listen/Speak Academic Course Task.\n");
+    printf("Press 1 for Personal Preference Task.\n");
+    printf("Press 2 for Choice Task.\n");
+    printf("Press 3 for Read/Listen/Speak Campus Situation Task.\n");
+    printf("Press 4 for Read/Listen/Speak Academic Course Task.\n");
+    printf("Press 5 for Listen/Speak Campus Situation Task.\n");
+    printf("Press 6 for Listen/Speak Academic Course Task.\n");
+    printf("Press t to define both preparation time and response time on your own.\n");
     printf("Type q to exit the program.\n");
     printf("\n");
 }
@@ -107,7 +107,8 @@ int main(){
                 timer(6,20,60);
                 break;
             case 't':{//test
-                scanf("%f%f", testPreparation,testResponse);
+            	printf("Provide the time you need to prepare and to respond.\n");
+                scanf("%lf %lf", &testPreparation, &testResponse);
                 timer(0,testPreparation,testResponse);
                 break;
                 }
